@@ -33,7 +33,7 @@ def generate_bitplane_slicing(image):
 
 
 baboon = cv2.imread("../supplement/baboon.png",cv2.IMREAD_UNCHANGED)
-cameraman = cv2.imread("../supplement/cameraman.tif",cv2.IMREAD_GRAYSCALE)
+cameraman = cv2.imread("../supplement/cameraman.tif",cv2.IMREAD_UNCHANGED)
 baboon = cv2.cvtColor(baboon, cv2.COLOR_BGR2RGB)
 cameraman = cv2.cvtColor(cameraman, cv2.COLOR_BGR2RGB)
 # plt.imshow(baboon,cmap='gray')
