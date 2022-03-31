@@ -1,0 +1,18 @@
+clear all;
+close all;
+img = imread('cameraman.tif');
+mag_ratio = 0.2;
+sel_ratio =0.75;
+img_mnpl1 = part_image(img,mag_ratio,sel_ratio);
+center_x_ratio = 0.45;
+center_y_ratio = 0.45;
+radius_max_ratio = 0.95;
+radius_thickness = 0.5;
+img_mnpl2 = circle_drw(img_mnpl1,center_x_ratio,center_y_ratio,radius_max_ratio,radius_thickness);
+figure();
+subplot(1,3,1);
+imshow(img);
+subplot(1,3,2);
+imshow(img_mnpl1);
+subplot(1,3,3);
+imshow(img_mnpl2);
