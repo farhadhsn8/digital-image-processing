@@ -43,7 +43,7 @@ subplt[2][3].imshow(peppers_ycbcr[:,:,2],cmap='gray')
 subplt[2][3].set_title("Cr")
 
 plt.show()
-
+fig.savefig('Q2_full_figure.png')
 
 
 def rgb2ycbcr(im):
@@ -57,6 +57,7 @@ def rgb2ycbcr(im):
     cbcr[:,:,1] = 128 - .169 * r - .331 * g + .5 * b
     # Cr
     cbcr[:,:,2] = 128 + .5 * r - .419 * g - .081 * b
+	
     return np.uint8(cbcr)
 
 
