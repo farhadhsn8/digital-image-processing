@@ -47,4 +47,4 @@ cv2.imwrite('step4.tif', cameraman_mnpl)
 
 
 psnr = cv2.PSNR(cameraman_mnpl, cameramanORG)
-print("psnr is : ", psnr)
+print("psnr is : ", psnr)  # psnr is :  27.62362833698984
