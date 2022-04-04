@@ -40,6 +40,7 @@ cv2.imwrite('step3.tif', cameraman_mnpl)
 cameraman_mnpl = cameraman_mnpl[0:cameramanORG.shape[1] , 0:cameramanORG.shape[0]]
 
 cameraman_mnpl = cv2.blur(cameraman_mnpl,(3,3))
+# cameraman_mnpl = cv2.blur(cameraman_mnpl,(5,5))
 
 plt.imshow(cameraman_mnpl)
 plt.show()
